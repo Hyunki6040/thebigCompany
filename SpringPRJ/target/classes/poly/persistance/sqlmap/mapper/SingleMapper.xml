@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.SingleMapper">
+	<!-- insert, update, delete, select -->
+	<select id="getComIntroIMG" parameterType="SingleDTO" resultType="SingleDTO">
+		SELECT 
+			SINGLE_NO AS single_no,
+			PAGE AS page,
+			CLASS AS cls,
+			CONTENT AS content
+		FROM SINGLE
+		WHERE 1=1
+	</select>
+	
+	<!-- insert, update, delete, select -->
+	<select id="getOrgChart" parameterType="SingleDTO" resultType="SingleDTO">
+		SELECT 
+			SINGLE_NO AS single_no,
+			PAGE AS page,
+			CLASS AS cls,
+			CONTENT AS content
+		FROM SINGLE
+		WHERE 1=1
+	</select>
+	
+	<!-- 
+	<select id="getTest" resultType="SingleDTO">
+		SELECT 
+			SINGLE_NO AS single_no,
+			PAGE AS page,
+			CLASS AS cls,
+			CONTENT AS content
+		FROM SINGLE
+		WHERE 1=1 
+		AND SINGLE_NO=0
+	</select>
+	 -->
+	
+	
+	
+</mapper>

@@ -1,0 +1,97 @@
+/* CSS Document */
+
+/* [login 로그인] -------------------------------------------------------------- */
+#login_area{font-family:'Noto Sans KR';}
+
+
+
+/* [submit 회원가입] -------------------------------------------------------------- */
+#submit_area{font-family:'Noto Sans KR';}
+
+
+
+/* [find_account 아이디/비밀번호 찾기] -------------------------------------------------------------- */
+#findAcc_area{font-family:'Noto Sans KR';}
+
+
+
+/* [index 메인] -------------------------------------------------------------- */
+#index_area{font-family:'Noto Sans KR';}
+#index_area .bottom_line{border-bottom:1px solid #e0e0e0; margin-bottom:15px;}
+#index_area .badge{background-color:#343C49;}
+
+/* [student_pass 학생증] --------------------------------------------------------*/
+#student_pass_area{font-family:'Noto Sans KR';}
+#student_pass_area .name{font-weight:500; font-size:21px; color:#333;}
+#student_pass_area .name_sub{font-size:12px;}
+#student_pass_area .outer_box_block{padding:0; margin-bottom:10px;}
+#student_pass_area .box_block{background-color:#343C49; padding:3px; color:#fff; font-weight:200; font-size:12px;}
+#student_pass_area .box_block_info{padding:15px; font-size:13px; font-weight:500; color:#333; letter-spacing:-0.5px;}
+#student_pass_area .right_icon{position:absolute; right:20px;}
+
+
+/* [hacsick_card 학식카드] -------------------------------------------------------------- */
+#hacsick_card_area{font-family:'Noto Sans KR';}
+
+
+/* [community 커뮤니티] -------------------------------------------------------------- */
+#community_area{font-family:'Noto Sans KR';}
+#community_area .cm_title{font-family:'Noto Sans KR'; font-weight:500; font-size:14px; color:#333;}
+#community_area .cm_content{font-family:'Noto Sans KR'; font-weight:300; font-size:13px; color:#999;}
+#community_area .cm_profile_box{float:left;}
+#community_area .write_box{font-size:12px; color:#333; float:left; line-height:15px; padding-top:3px; padding-left:5px;}
+#community_area .write_info{font-size:13px; color:#333;}
+#community_area .write_date{font-size:11px; color:#999;}
+#community_area .cm_reple_box{border-top:1px solid #e9e9e9; margin-top:20px; padding-top:20px;}
+#community_area .reple_inner{position:relative; padding:0 60px;}
+#community_area .write_inner{position:relative; padding:0 60px 0 0;}
+#community_area .reple_profile{position:absolute; z-index:1; left:0px;}
+#community_area .reple_submit_btn{height:37.38px; position:absolute; right:0; bottom:0;}
+#community_area .reple_content{background-color:#F2F3F5; padding:10px; font-size:13px; color:#333; border-radius:5px;}
+#community_area .like_box{position:absolute; left:-3px; top:-7px; background-color:#385898; padding:2px 8px; width:fit-content; color:#fff; font-size:11px; margin-bottom:5px;}
+#community_area .like_box_reple{position:absolute; right:-5px; bottom:0px; background-color:#385898; padding:2px 8px; width:fit-content; color:#fff; font-size:11px; margin-bottom:5px;}
+
+
+
+
+/* [profile 프로필] -------------------------------------------------------------- */
+#profile_area{font-family:'Noto Sans KR';}
+#profile_area .name{font-weight:500; font-size:21px; color:#333;}
+#profile_area .name_sub{font-size:12px;}
+#profile_area .outer_box_block{padding:0; margin-bottom:10px;}
+#profile_area .box_block{background-color:#343C49; padding:3px; color:#fff; font-weight:200; font-size:12px;}
+#profile_area .box_block_info{padding:15px; font-size:13px; font-weight:500; color:#333; letter-spacing:-0.5px;}
+#profile_area .right_icon{position:absolute; right:20px;}
+
+/* [kakao_plus 카카오 플러스-총학생회] -----------------------------------------------------*/
+#kakao_plus_area{font-family:'Noto Sans KR';}
+#kakao_plus_area .title{font-size:32px; font-weight:500; color:#333; line-height:24px;}
+
+/* [diet_main 영양사 메인] -------------------------------------------------------------- */
+#diet_area{font-family:'Noto Sans KR';}
+#diet_area .name{font-weight:500; font-size:21px; color:#333;}
+#diet_area .name_sub{font-size:12px;}
+#diet_area .outer_box_block{padding:0; margin-bottom:10px;}
+#diet_area .box_block{background-color:#343C49; padding:3px 3px 3px 15px; color:#fff; font-weight:200; font-size:12px;}
+#diet_area .box_block_info{padding:15px; font-size:13px; font-weight:500; color:#333; letter-spacing:-0.5px;}
+#diet_area .right_icon{position:absolute; right:20px;}
+
+
+/* [payment 결제] -------------------------------------------------------------- */
+#payment_area{font-family:'Noto Sans KR';}
+#payment_area .outer_box_block{padding:0; margin-bottom:10px;}
+#payment_area .box_block{background-color:#343C49; padding:3px 3px 3px 15px; color:#fff; font-weight:200; font-size:12px;}
+#payment_area .box_block_info{padding:15px; font-size:13px; font-weight:500; color:#333; letter-spacing:-0.5px;}
+#payment_area .right_icon{position:absolute; right:20px;}
+
+
+/* [pos 포스기] -------------------------------------------------------------- */
+#pos_area{font-family:'Noto Sans KR';}
+#pos_area .bottom_line{border-bottom:1px solid #e0e0e0; margin-bottom:15px;}
+#pos_area .badge{background-color:#343C49;}
+#pos_area .name{font-weight:500; font-size:21px; color:#333;}
+#pos_area .name_sub{font-size:12px;}
+#pos_area .outer_box_block{padding:0; margin-bottom:10px;}
+#pos_area .box_block{background-color:#343C49; padding:3px; color:#fff; font-weight:200; font-size:12px;}
+#pos_area .box_block_info{padding:15px; font-size:13px; font-weight:500; color:#333; letter-spacing:-0.5px;}
+#pos_area .right_icon{position:absolute; right:20px;}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.BoardMapper">
+	<!-- insert, update, delete, select -->
+	<select id="getBoardList" resultType="BoardDTO" parameterType="string">
+		SELECT *
+		FROM BOARD
+		WHERE(PAGE = #{page})
+		 ORDER BY
+        	BOARD_NO desc,  
+            REG_DT desc;
+	</select>
+	<insert id="insertBoard" parameterType="BoardDTO">
+		INSERT INTO
+		BOARD(PAGE, CONTENT, REG_DT, WRITER, TITLE)
+		VALUES (#{page}, #{content}, #{reg_dt}, #{writer}, #{title})
+	</insert>
+	
+	<delete id="deleteBoard" parameterType="BoardDTO">
+		DELETE FROM BOARD
+		WHERE(BOARD_NO = #{board_no})
+	</delete>
+	
+	<update id="updateAnswer" parameterType="BoardDTO">
+		UPDATE BOARD
+		SET ANSWER = 'y'
+		WHERE(BOARD_NO = #{board_no})
+	</update>
+</mapper>

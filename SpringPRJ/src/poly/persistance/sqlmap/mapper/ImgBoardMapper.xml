@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="poly.persistance.mapper.ImgBoardMapper">
+	<!-- insert, update, delete, select -->
+	<select id="getBoardList" resultType="ImgDTO" parameterType="string">
+		SELECT *
+		FROM IMG_BOARD
+		WHERE(PAGE = #{page})
+		 ORDER BY
+		 	REG_DT desc,
+        	IMG_NO desc;
+	</select>
+	<insert id="insertBoard" parameterType="ImgDTO">
+		INSERT INTO
+		IMG_BOARD(PAGE, CONTENT, REG_DT, TAG, TITLE, IMG)
+		VALUES (#{page}, #{content}, #{reg_dt}, #{tag}, #{title}, #{img})
+	</insert>
+	<insert id="insertBoard_01" parameterType="ImgDTO">
+		INSERT INTO
+		IMG_BOARD(PAGE, CONTENT, REG_DT, TAG, TITLE, IMG, IMG_01)
+		VALUES (#{page}, #{content}, #{reg_dt}, #{tag}, #{title}, #{img}, #{img_01})
+	</insert>
+	
+	<delete id="deleteBoard" parameterType="string">
+		DELETE FROM IMG_BOARD
+		WHERE(IMG_NO = #{board_no})
+	</delete>
+	
+	<update id="updateAnswer" parameterType="string">
+		UPDATE BOARD
+		SET ANSWER = 'y'
+		WHERE(BOARD_NO = #{board_no})
+	</update>
+	
+	<select id="getImgDetail" resultType="string" parameterType="string">
+		SELECT IMG
+		FROM IMG_DETAIL
+		WHERE(IMG_NO = #{img_no})
+	</select>
+	
+	
+	<update id="modifyBoard" parameterType="ImgDTO">
+		UPDATE IMG_BOARD
+		SET TITLE = #{title},
+		IMG = #{img},
+		REG_DT = #{reg_dt}
+		WHERE(IMG_NO = #{img_no})
+	</update>
+	
+	<update id="modifyBoard_01" parameterType="ImgDTO">
+		UPDATE IMG_BOARD
+		SET TITLE = #{title},
+		IMG = #{img},
+		IMG_01 = #{img_01},
+		REG_DT = #{reg_dt}
+		WHERE(IMG_NO = #{img_no})
+	</update>
+</mapper>
